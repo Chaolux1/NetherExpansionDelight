@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:ochre_frogmist"
+    },
+    {
+      "item": "netherexp:ochre_frogmist"
+    }
+  ],
+  "result": {
+    "item": "jadensnetherexpansiondelight:ochre_sauce"
+  }
+}

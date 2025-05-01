@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jadensnetherexpansiondelight:item/blue_scale_fungus_roll"
+  }
+}

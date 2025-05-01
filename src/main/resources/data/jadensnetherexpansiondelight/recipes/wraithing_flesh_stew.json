@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:wisp_bottle"
+    },
+    {
+      "item": "netherexp:wisp_bottle"
+    },
+    {
+      "item": "jadensnetherexpansiondelight:wraithing_flesh_slice"
+    }
+  ],
+  "result": {
+    "item": "jadensnetherexpansiondelight:wraithing_flesh_stew"
+  }
+}

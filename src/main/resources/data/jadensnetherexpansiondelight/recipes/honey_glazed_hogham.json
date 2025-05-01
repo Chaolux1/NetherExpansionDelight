@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:cooked_hogham"
+    },
+    {
+      "item": "netherexp:nightspores"
+    },
+    {
+      "item": "netherexp:nightspores"
+    },
+    {
+      "item": "farmersdelight:rice"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    }
+  ],
+  "result": {
+    "item": "jadensnetherexpansiondelight:honey_glazed_hogham"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "netherexp:hogham"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "jadensnetherexpansiondelight:hogham_slice"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

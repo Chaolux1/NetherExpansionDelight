@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "netherexp:glowcheese"
+    }
+  ],
+  "result": [
+    {
+      "count": 5,
+      "item": "jadensnetherexpansiondelight:glowcheese_slice"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

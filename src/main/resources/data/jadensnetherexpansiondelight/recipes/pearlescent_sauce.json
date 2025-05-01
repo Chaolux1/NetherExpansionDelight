@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:pearlescent_frogmist"
+    },
+    {
+      "item": "netherexp:pearlescent_frogmist"
+    }
+  ],
+  "result": {
+    "item": "jadensnetherexpansiondelight:pearlescent_sauce"
+  }
+}

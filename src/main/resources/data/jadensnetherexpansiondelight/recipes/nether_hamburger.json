@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "netherexp:cerebrage"
+    },
+    {
+      "item": "jadensnetherexpansiondelight:wraithing_flesh_slice"
+    },
+    {
+      "tag": "forge:crops/tomato"
+    }
+  ],
+  "result": {
+    "item": "jadensnetherexpansiondelight:nether_hamburger"
+  }
+}
