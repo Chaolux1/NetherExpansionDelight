@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "netherexp:wraithing_flesh"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "jadensnetherexpansiondelight:wraithing_flesh_slice"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

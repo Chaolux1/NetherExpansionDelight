@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:glowcheese"
+    },
+    {
+      "item": "netherexp:glowcheese"
+    }
+  ],
+  "result": {
+    "item": "jadensnetherexpansiondelight:smelt_glowcheese"
+  }
+}

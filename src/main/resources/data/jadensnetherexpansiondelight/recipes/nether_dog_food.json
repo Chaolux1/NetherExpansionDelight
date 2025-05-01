@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:banshee_rod"
+    },
+    {
+      "item": "netherexp:wraithing_flesh"
+    }
+  ],
+  "result": {
+    "item": "jadensnetherexpansiondelight:nether_dog_food"
+  }
+}
