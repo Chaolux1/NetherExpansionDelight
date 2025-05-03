@@ -90,6 +90,10 @@ public class NetherExpansionDelight
             event.accept(ModItems.WISP_PIE);
             event.accept(ModItems.WRAITHING_FLESH_SLICE);
             event.accept(ModItems.WRAITHING_FLESH_STEW);
+            event.accept(ModItems.LIGHTSPORES_CHEESECAKE_SLICE);
+            event.accept(ModItems.NIGHTSPORES_CHEESECAKE_SLICE);
+            event.accept(ModItems.WISP_PIE_SLICE);
+            event.accept(ModItems.HONEY_GLAZED_HOGHAM_BLOCK);
         }
     }
 

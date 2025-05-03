@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "jadensnetherexpansiondelight:nightspores_cheesecake"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "jadensnetherexpansiondelight:nightspores_cheesecake_slice"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

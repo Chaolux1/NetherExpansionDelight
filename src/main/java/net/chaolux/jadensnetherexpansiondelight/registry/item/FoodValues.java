@@ -17,13 +17,13 @@ public class FoodValues {
     public static final FoodProperties GLOWCHEESE_SLICE = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.1F).fast().build();
     public static final FoodProperties HOGHAM_SLICE = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F).fast().meat().build();
     public static final FoodProperties HOGHAM_STEW = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.9F).effect(() -> new MobEffectInstance(JNEMobEffects.WITHER_IMMUNITY.get(), 400, 0, false, false), 1.0F).build();
-    public static final FoodProperties HONEY_GLAZED_HOGHAM = (new FoodProperties.Builder()).nutrition(14).saturationMod(1.2F).effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 3200, 0, false, false), 1.0F).effect(() -> new MobEffectInstance(JNEMobEffects.WITHER_IMMUNITY.get(), 5200, 0, false, false), 1.0F).build();
-    public static final FoodProperties LIGHTSPORES_CHEESECAKE = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.8F).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1200, 0, false, false), 1.0F).build();
+    public static final FoodProperties HONEY_GLAZED_HOGHAM_BLOCK = (new FoodProperties.Builder()).nutrition(14).saturationMod(1.2F).effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 3200, 0, false, false), 1.0F).effect(() -> new MobEffectInstance(JNEMobEffects.WITHER_IMMUNITY.get(), 5200, 0, false, false), 1.0F).build();
+    public static final FoodProperties LIGHTSPORES_CHEESECAKE_SLICE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.4F).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1200, 0, false, false), 1.0F).build();
     public static final FoodProperties LIGHTSPORES_JUICE = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.8F).effect(() -> new MobEffectInstance(JNEMobEffects.MINING_FATIGUE_IMMUNITY.get(), 800, 0, false, false), 1.0F).build();
     public static final FoodProperties LIGHTSPORES_POPSICLE = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.4F).effect(() -> new MobEffectInstance(JNEMobEffects.MINING_FATIGUE_IMMUNITY.get(), 1000, 0, false, false), 1.0F).build();
     public static final FoodProperties NETHER_DOG_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.7F).meat().effect(() -> new MobEffectInstance(JNEMobEffects.WITHER_IMMUNITY.get(), 1200, 0, false, false), 1.0F).build();
     public static final FoodProperties NETHER_HAMBURGER = (new FoodProperties.Builder()).nutrition(9).saturationMod(0.9F).build();
-    public static final FoodProperties NIGHTSPORES_CHEESECAKE = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.8F).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1200, 0, false, false), 1.0F).build();
+    public static final FoodProperties NIGHTSPORES_CHEESECAKE_SLICE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.4F).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1200, 0, false, false), 1.0F).build();
     public static final FoodProperties NIGHTSPORES_JUICE = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.8F).effect(() -> new MobEffectInstance(JNEMobEffects.WEAKNESS_IMMUNITY.get(), 600, 0, false, false), 1.0F).build();
     public static final FoodProperties NIGHTSPORES_POPSICLE = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.4F).effect(() -> new MobEffectInstance(JNEMobEffects.SLOWNESS_IMMUNITY.get(), 800, 0, false, false), 1.0F).build();
     public static final FoodProperties OCHRE_COOKIE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.1F).build();
@@ -37,7 +37,7 @@ public class FoodValues {
     public static final FoodProperties VERDANT_SAUCE = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.6F).effect(() -> new MobEffectInstance(JNEMobEffects.UNLUCK_IMMUNITY.get(), 600, 0, false, false), 1.0F).build();
     public static final FoodProperties WISP_CUSTARD = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.7F).effect(() -> new MobEffectInstance(JNEMobEffects.WEAKNESS_IMMUNITY.get(), 700, 0, false, false), 1.0F).build();
     public static final FoodProperties WISP_DUMPLINGS = (new FoodProperties.Builder()).nutrition(8).saturationMod(1.1F).build();
-    public static final FoodProperties WISP_PIE = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.9F).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1200, 0, false, false), 1.0F).build();
+    public static final FoodProperties WISP_PIE_SLICE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.4F).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1200, 0, false, false), 1.0F).build();
     public static final FoodProperties WRAITHING_FLESH_SLICE = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F).fast().meat().build();
     public static final FoodProperties WRAITHING_FLESH_STEW = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.8F).effect(() -> new MobEffectInstance(JNEMobEffects.SLOWNESS_IMMUNITY.get(), 500, 0, false, false), 1.0F).build();
 }
