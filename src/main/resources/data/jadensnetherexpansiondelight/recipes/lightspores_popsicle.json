@@ -1,25 +1,24 @@
 {
-  "type": "farmersdelight:cooking",
-  "container": {
-    "item": "minecraft:stick"
-  },
-  "cookingtime": 200,
-  "experience": 1.0,
-  "ingredients": [
-    {
-      "item": "netherexp:lightspores"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "-": {
+      "item": "minecraft:stick"
     },
-    {
-      "item": "netherexp:lightspores"
-    },
-    {
-      "item": "minecraft:sugar"
-    },
-    {
+    "i": {
       "item": "minecraft:ice"
+    },
+    "m": {
+      "item": "netherexp:lightspores"
     }
+  },
+  "pattern": [
+    " mm",
+    "imm",
+    "-i "
   ],
   "result": {
     "item": "jadensnetherexpansiondelight:lightspores_popsicle"
-  }
+  },
+  "show_notification": true
 }

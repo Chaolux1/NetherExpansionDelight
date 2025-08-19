@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:lightspores"
+    },
+    {
+      "item": "netherexp:nightspores"
+    }
+  ],
+  "result": {
+    "item": "jadensnetherexpansiondelight:spores_salad"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "lendersdelight:wither_rose"
+    },
+    {
+      "item": "netherexp:cerebrage"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "jadensnetherexpansiondelight:wrapped_wither_rose"
+  }
+}

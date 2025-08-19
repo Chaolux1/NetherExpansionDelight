@@ -1,8 +1,7 @@
-package net.chaolux.jadensnetherexpansiondelight.registry.item;
+package net.chaolux.jadensnetherexpansiondelight.common.item;
 
 import net.jadenxgamer.netherexp.registry.effect.JNEMobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import vectorwing.farmersdelight.common.registry.ModEffects;
 
@@ -38,6 +37,10 @@ public class FoodValues {
     public static final FoodProperties WISP_CUSTARD = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.7F).effect(() -> new MobEffectInstance(JNEMobEffects.WEAKNESS_IMMUNITY.get(), 700, 0, false, false), 1.0F).build();
     public static final FoodProperties WISP_DUMPLINGS = (new FoodProperties.Builder()).nutrition(8).saturationMod(1.1F).build();
     public static final FoodProperties WISP_PIE_SLICE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.4F).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1200, 0, false, false), 1.0F).build();
-    public static final FoodProperties WRAITHING_FLESH_SLICE = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F).fast().meat().build();
-    public static final FoodProperties WRAITHING_FLESH_STEW = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.8F).effect(() -> new MobEffectInstance(JNEMobEffects.SLOWNESS_IMMUNITY.get(), 500, 0, false, false), 1.0F).build();
+    public static final FoodProperties WRAITHING_FLESH_SLICE = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.1F).fast().meat().build();
+    public static final FoodProperties WRAITHING_FLESH_STEW = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.8F).effect(() -> new MobEffectInstance(JNEMobEffects.WEAKNESS_IMMUNITY.get(), 500, 0, false, false), 1.0F).build();
+    public static final FoodProperties SPORES_SALAD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.8F).build();
+    public static final FoodProperties COOKED_WRAITHING_FLESH = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.1F).effect(() -> new MobEffectInstance(JNEMobEffects.MINING_FATIGUE_IMMUNITY.get(), 1200, 0, false, false), 1.0F).build();
+    public static final FoodProperties COOKED_WRAITHING_FLESH_SLICE = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F).effect(() -> new MobEffectInstance(JNEMobEffects.SLOWNESS_IMMUNITY.get(), 600, 0, false, false), 1.0F).build();
+    public static final FoodProperties WRAPPED_WITHER_ROSE = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.3F).effect(() -> new MobEffectInstance(JNEMobEffects.WITHER_IMMUNITY.get(), 2500, 0, false, false), 1.0F).build();
 }

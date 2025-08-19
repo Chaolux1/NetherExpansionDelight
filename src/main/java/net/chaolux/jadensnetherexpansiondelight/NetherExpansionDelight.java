@@ -57,43 +57,53 @@ public class NetherExpansionDelight
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.BANSHEE_COOKIE);
-            event.accept(ModItems.BANSHEE_POWDER_ICE_CREAM);
-            event.accept(ModItems.BLUE_SCALE_FUNGUS_ROLL);
-            event.accept(ModItems.CEREBRAGE_ROLLS);
-            event.accept(ModItems.COOKED_HOGHAM_SLICE);
-            event.accept(ModItems.GLOWCHEESE_ROLL);
-            event.accept(ModItems.GLOWCHEESE_SANDWICH);
-            event.accept(ModItems.GLOWCHEESE_SLICE);
+            event.accept(ModItems.COOKED_WRAITHING_FLESH);
+            event.accept(ModItems.COOKED_WRAITHING_FLESH_SLICE);
+            event.accept(ModItems.WRAITHING_FLESH_SLICE);
             event.accept(ModItems.HOGHAM_SLICE);
-            event.accept(ModItems.HOGHAM_STEW);
-            event.accept(ModItems.HONEY_GLAZED_HOGHAM);
-            event.accept(ModItems.LIGHTSPORES_CHEESECAKE);
-            event.accept(ModItems.LIGHTSPORES_JUICE);
-            event.accept(ModItems.LIGHTSPORES_POPSICLE);
-            event.accept(ModItems.NETHER_DOG_FOOD);
+            event.accept(ModItems.COOKED_HOGHAM_SLICE);
+            event.accept(ModItems.GLOWCHEESE_SLICE);
+            event.accept(ModItems.SMELT_GLOWCHEESE);
+            event.accept(ModItems.GLOWCHEESE_SANDWICH);
             event.accept(ModItems.NETHER_HAMBURGER);
-            event.accept(ModItems.NIGHTSPORES_CHEESECAKE);
-            event.accept(ModItems.NIGHTSPORES_JUICE);
-            event.accept(ModItems.NIGHTSPORES_POPSICLE);
+            event.accept(ModItems.BLUE_SCALE_FUNGUS_ROLL);
+            event.accept(ModItems.RED_SCALE_FUNGUS_ROLL);
+            event.accept(ModItems.GLOWCHEESE_ROLL);
             event.accept(ModItems.OCHRE_COOKIE);
             event.accept(ModItems.OCHRE_SAUCE);
-            event.accept(ModItems.PASTA_WITH_COOKED_HOGHAM);
-            event.accept(ModItems.PEARLESCENT_COOKIE);
-            event.accept(ModItems.PEARLESCENT_SAUCE);
-            event.accept(ModItems.RED_SCALE_FUNGUS_ROLL);
-            event.accept(ModItems.SMELT_GLOWCHEESE);
             event.accept(ModItems.VERDANT_COOKIE);
             event.accept(ModItems.VERDANT_SAUCE);
-            event.accept(ModItems.WISP_CUSTARD);
-            event.accept(ModItems.WISP_DUMPLINGS);
-            event.accept(ModItems.WISP_PIE);
-            event.accept(ModItems.WRAITHING_FLESH_SLICE);
-            event.accept(ModItems.WRAITHING_FLESH_STEW);
-            event.accept(ModItems.LIGHTSPORES_CHEESECAKE_SLICE);
+            event.accept(ModItems.PEARLESCENT_COOKIE);
+            event.accept(ModItems.PEARLESCENT_SAUCE);
+            event.accept(ModItems.NIGHTSPORES_JUICE);
+            event.accept(ModItems.NIGHTSPORES_POPSICLE);
+            event.accept(ModItems.NIGHTSPORES_CHEESECAKE);
             event.accept(ModItems.NIGHTSPORES_CHEESECAKE_SLICE);
+            event.accept(ModItems.LIGHTSPORES_JUICE);
+            event.accept(ModItems.LIGHTSPORES_POPSICLE);
+            event.accept(ModItems.LIGHTSPORES_CHEESECAKE);
+            event.accept(ModItems.LIGHTSPORES_CHEESECAKE_SLICE);
+            event.accept(ModItems.BANSHEE_POWDER_ICE_CREAM);
+            event.accept(ModItems.BANSHEE_COOKIE);
+            event.accept(ModItems.WISP_DUMPLINGS);
+            event.accept(ModItems.WISP_CUSTARD);
+            event.accept(ModItems.WISP_PIE);
             event.accept(ModItems.WISP_PIE_SLICE);
+            event.accept(ModItems.CEREBRAGE_ROLLS);
+            event.accept(ModItems.WRAPPED_WITHER_ROSE);
+            event.accept(ModItems.SPORES_SALAD);
+            event.accept(ModItems.HOGHAM_STEW);
+            event.accept(ModItems.PASTA_WITH_COOKED_HOGHAM);
+            event.accept(ModItems.WRAITHING_FLESH_STEW);
             event.accept(ModItems.HONEY_GLAZED_HOGHAM_BLOCK);
+            event.accept(ModItems.HONEY_GLAZED_HOGHAM);
+            event.accept(ModItems.NETHER_DOG_FOOD);
+        }
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.ECTO_KNIFE);
+        }
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ECTO_INGOT);
         }
     }
 

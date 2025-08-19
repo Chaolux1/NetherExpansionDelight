@@ -1,5 +1,6 @@
 package net.chaolux.jadensnetherexpansiondelight.registry.item;
 
+import net.chaolux.jadensnetherexpansiondelight.common.item.FoodValues;
 import net.chaolux.jadensnetherexpansiondelight.registry.block.ModBlocks;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -12,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
 import vectorwing.farmersdelight.common.item.DogFoodItem;
+import vectorwing.farmersdelight.common.item.DrinkableItem;
 import vectorwing.farmersdelight.common.item.KnifeItem;
 
 import java.util.function.Supplier;
@@ -58,6 +60,12 @@ public class ModItems {
     public static final RegistryObject<Item> WISP_PIE;
     public static final RegistryObject<Item> WRAITHING_FLESH_SLICE;
     public static final RegistryObject<Item> WRAITHING_FLESH_STEW;
+    public static final RegistryObject<Item> COOKED_WRAITHING_FLESH;
+    public static final RegistryObject<Item> COOKED_WRAITHING_FLESH_SLICE;
+    public static final RegistryObject<Item> ECTO_INGOT;
+    public static final RegistryObject<Item> ECTO_KNIFE;
+    public static final RegistryObject<Item> SPORES_SALAD;
+    public static final RegistryObject<Item> WRAPPED_WITHER_ROSE;
 
     public static RegistryObject<Item> registerWithTab(String name, Supplier<Item> supplier) {
         RegistryObject<Item> block = ITEMS.register(name, supplier);
@@ -90,10 +98,11 @@ public class ModItems {
         SMELT_GLOWCHEESE = registerWithTab("smelt_glowcheese", () -> new ConsumableItem(bowlFoodItem(FoodValues.SMELT_GLOWCHEESE), true));
         VERDANT_SAUCE = registerWithTab("verdant_sauce", () -> new ConsumableItem(bowlFoodItem(FoodValues.VERDANT_SAUCE), true));
         WRAITHING_FLESH_STEW = registerWithTab("wraithing_flesh_stew", () -> new ConsumableItem(bowlFoodItem(FoodValues.WRAITHING_FLESH_STEW), true));
+        SPORES_SALAD = registerWithTab("spores_salad", () -> new ConsumableItem(bowlFoodItem(FoodValues.SPORES_SALAD)));
 
-        LIGHTSPORES_JUICE = registerWithTab("lightspores_juice", () -> new ConsumableItem(drinkItem(FoodValues.LIGHTSPORES_JUICE), true));
-        NIGHTSPORES_JUICE = registerWithTab("nightspores_juice", () -> new ConsumableItem(drinkItem(FoodValues.NIGHTSPORES_JUICE), true));
-        WISP_CUSTARD = registerWithTab("wisp_custard", () -> new ConsumableItem(drinkItem(FoodValues.WISP_CUSTARD), true));
+        LIGHTSPORES_JUICE = registerWithTab("lightspores_juice", () -> new DrinkableItem(drinkItem(FoodValues.LIGHTSPORES_JUICE), true));
+        NIGHTSPORES_JUICE = registerWithTab("nightspores_juice", () -> new DrinkableItem(drinkItem(FoodValues.NIGHTSPORES_JUICE), true));
+        WISP_CUSTARD = registerWithTab("wisp_custard", () -> new DrinkableItem(drinkItem(FoodValues.WISP_CUSTARD), true));
 
         BANSHEE_POWDER_ICE_CREAM = registerWithTab("banshee_powder_ice_cream", () -> new ConsumableItem(stickItem(FoodValues.BANSHEE_POWDER_ICE_CREAM), true));
         LIGHTSPORES_POPSICLE = registerWithTab("lightspores_popsicle", () -> new ConsumableItem(stickItem(FoodValues.LIGHTSPORES_POPSICLE), true));
@@ -114,6 +123,9 @@ public class ModItems {
         VERDANT_COOKIE = registerWithTab("verdant_cookie", () -> new Item(foodItem(FoodValues.VERDANT_COOKIE)));
         WISP_DUMPLINGS = registerWithTab("wisp_dumplings", () -> new Item(foodItem(FoodValues.WISP_DUMPLINGS)));
         WRAITHING_FLESH_SLICE = registerWithTab("wraithing_flesh_slice", () -> new Item(foodItem(FoodValues.WRAITHING_FLESH_SLICE)));
+        COOKED_WRAITHING_FLESH = registerWithTab("cooked_wraithing_flesh", () -> new Item(foodItem(FoodValues.COOKED_WRAITHING_FLESH)));
+        COOKED_WRAITHING_FLESH_SLICE = registerWithTab("cooked_wraithing_flesh_slice", () -> new Item(foodItem(FoodValues.COOKED_WRAITHING_FLESH_SLICE)));
+        WRAPPED_WITHER_ROSE = registerWithTab("wrapped_wither_rose", () -> new Item(foodItem(FoodValues.WRAPPED_WITHER_ROSE)));
 
         LIGHTSPORES_CHEESECAKE = registerWithTab("lightspores_cheesecake", () -> new BlockItem((Block) ModBlocks.LIGHTSPORES_CHEESECAKE.get(), basicItem()));
         LIGHTSPORES_CHEESECAKE_SLICE = registerWithTab("lightspores_cheesecake_slice", () -> new Item(foodItem(FoodValues.LIGHTSPORES_CHEESECAKE_SLICE)));
@@ -126,5 +138,9 @@ public class ModItems {
         HONEY_GLAZED_HOGHAM = registerWithTab("honey_glazed_hogham", () -> new ConsumableItem(bowlFoodItem(FoodValues.HONEY_GLAZED_HOGHAM_BLOCK), true));
 
         NETHER_DOG_FOOD = registerWithTab("nether_dog_food", () -> new DogFoodItem(bowlFoodItem(FoodValues.NETHER_DOG_FOOD)));
+
+        ECTO_INGOT = registerWithTab("ecto_ingot", () -> new Item(basicItem()));
+        ECTO_KNIFE = registerWithTab("ecto_knife", () -> new KnifeItem(Tiers.NETHERITE, 0.5F, -2.0F, basicItem()));
+
     }
 }

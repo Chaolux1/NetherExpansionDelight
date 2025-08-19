@@ -2,7 +2,7 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "netherexp:cooked_hogham"
+      "tag": "netherexp:cooked_hogham"
     }
   ],
   "result": [
