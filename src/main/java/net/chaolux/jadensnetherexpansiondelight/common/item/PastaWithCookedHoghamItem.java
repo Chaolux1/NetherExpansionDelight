@@ -20,7 +20,7 @@ import java.util.UUID;
 
 public class PastaWithCookedHoghamItem extends JNEDConsumableItem {
     public PastaWithCookedHoghamItem(Properties properties) {
-        super(properties);
+        super(properties, false, true);
     }
 
     @Override

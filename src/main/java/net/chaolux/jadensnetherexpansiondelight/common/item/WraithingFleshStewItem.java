@@ -16,7 +16,7 @@ public class WraithingFleshStewItem extends JNEDConsumableItem {
     private static final UUID HEART_UUID = UUID.fromString("17025383-35de-4946-b0a9-4bf68ed531fc");
 
     public WraithingFleshStewItem(Properties properties) {
-        super(properties);
+        super(properties, false, true);
     }
 
     @Override

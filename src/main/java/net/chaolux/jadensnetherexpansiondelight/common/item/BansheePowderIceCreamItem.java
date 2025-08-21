@@ -18,7 +18,7 @@ import java.util.List;
 public class BansheePowderIceCreamItem extends JNEDConsumableItem {
 
     public BansheePowderIceCreamItem(Properties properties) {
-        super(properties);
+        super(properties, false, true);
     }
 
     @Override

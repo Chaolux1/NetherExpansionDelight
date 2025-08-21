@@ -16,7 +16,7 @@ import net.minecraft.world.level.block.state.BlockState;
 public class NightsporesPopsicleItem extends JNEDConsumableItem {
 
     public NightsporesPopsicleItem(Properties properties) {
-        super(properties);
+        super(properties, false, true);
     }
 
     @Override

@@ -16,7 +16,7 @@ import java.util.List;
 
 public class NetherHamburgerItem extends JNEDConsumableItem {
     public NetherHamburgerItem(Properties properties) {
-        super(properties);
+        super(properties, false, true);
     }
 
     @Override

@@ -42,6 +42,22 @@
   "item.jadensnetherexpansiondelight.wrapped_wither_rose": "Wrapped Wither Rose",
   "item.jadensnetherexpansiondelight.spores_salad": "Spores Salad",
   "item.jadensnetherexpansiondelight.ecto_ingot": "Ecto Ingot",
-  "item.jadensnetherexpansiondelight.ecto_knife": "Ecto Knife"
+  "item.jadensnetherexpansiondelight.ecto_knife": "Ecto Knife",
+
+  "jadensnetherexpansiondelight.tooltip.banshee_powder_ice_cream": "Dispels nearby aggression",
+  "jadensnetherexpansiondelight.tooltip.blue_scale_fungus_roll": "Pushes entities away from you",
+  "jadensnetherexpansiondelight.tooltip.cerebrage_rolls": "Turns nearby monsters against each other",
+  "jadensnetherexpansiondelight.tooltip.glowcheese_slice": "Toggles Redstone Lamps around you",
+  "jadensnetherexpansiondelight.tooltip.hogham_stew": "Provokes nearby animals to panic",
+  "jadensnetherexpansiondelight.tooltip.lightspores_juice": "Lights candles in the area",
+  "jadensnetherexpansiondelight.tooltip.lightspores_popsicle": "Swaps place with a random creature",
+  "jadensnetherexpansiondelight.tooltip.nether_hamburger": "Extinguishes flames and harms fiery mobs",
+  "jadensnetherexpansiondelight.tooltip.nightspores_juice": "Extinguishes nearby candles",
+  "jadensnetherexpansiondelight.tooltip.nightspores_popsicle": "Turns nearby lights into soul fire",
+  "jadensnetherexpansiondelight.tooltip.pasta_with_cooked_hogham": "Draws pigs toward you",
+  "jadensnetherexpansiondelight.tooltip.red_scale_fungus_roll": "Pulls entities closer to you",
+  "jadensnetherexpansiondelight.tooltip.spores_salad": "Grants regeneration to allies",
+  "jadensnetherexpansiondelight.tooltip.wisp_custard": "Launches you upward",
+  "jadensnetherexpansiondelight.tooltip.wraithing_flesh_stew": "Escape Soul"
 
 }

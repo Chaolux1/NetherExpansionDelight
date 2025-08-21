@@ -16,7 +16,7 @@ import net.minecraft.world.level.block.state.BlockState;
 public class LightsporesJuiceItem extends JNEDConsumableItem {
 
     public LightsporesJuiceItem(Properties properties) {
-        super(properties);
+        super(properties, false, true);
     }
 
     @Override

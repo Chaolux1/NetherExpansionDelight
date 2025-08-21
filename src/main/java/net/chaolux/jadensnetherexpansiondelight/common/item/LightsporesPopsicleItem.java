@@ -22,13 +22,13 @@ import java.util.List;
 public class LightsporesPopsicleItem extends JNEDConsumableItem {
 
     public LightsporesPopsicleItem(Properties properties) {
-        super(properties);
+        super(properties, false, true);
     }
 
     @Override
     public void affectConsumer(ItemStack stack, Level level, LivingEntity consumer) {
         if(!(level instanceof ServerLevel serverLevel)) return;
-        double radius = 10.0;
+        double radius = 16.0;
         List<LivingEntity> mobs = serverLevel.getEntitiesOfClass(LivingEntity.class, consumer.getBoundingBox().inflate(radius), entity -> !(entity instanceof Player) && entity !=consumer);
         if(mobs.isEmpty()) return;
         LivingEntity another=mobs.get(consumer.getRandom().nextInt(mobs.size()));

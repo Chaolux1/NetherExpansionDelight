@@ -98,11 +98,11 @@ public class ModItems {
         SMELT_GLOWCHEESE = registerWithTab("smelt_glowcheese", () -> new ConsumableItem(bowlFoodItem(FoodValues.SMELT_GLOWCHEESE), true));
         VERDANT_SAUCE = registerWithTab("verdant_sauce", () -> new ConsumableItem(bowlFoodItem(FoodValues.VERDANT_SAUCE), true));
         WRAITHING_FLESH_STEW = registerWithTab("wraithing_flesh_stew", () -> new WraithingFleshStewItem(bowlFoodItem(FoodValues.WRAITHING_FLESH_STEW)));
-        SPORES_SALAD = registerWithTab("spores_salad", () -> new ConsumableItem(bowlFoodItem(FoodValues.SPORES_SALAD)));
+        SPORES_SALAD = registerWithTab("spores_salad", () -> new SporesSaladItem(bowlFoodItem(FoodValues.SPORES_SALAD)));
 
         LIGHTSPORES_JUICE = registerWithTab("lightspores_juice", () -> new LightsporesJuiceItem(drinkItem(FoodValues.LIGHTSPORES_JUICE)));
         NIGHTSPORES_JUICE = registerWithTab("nightspores_juice", () -> new NightsporesJuiceItem(drinkItem(FoodValues.NIGHTSPORES_JUICE)));
-        WISP_CUSTARD = registerWithTab("wisp_custard", () -> new DrinkableItem(drinkItem(FoodValues.WISP_CUSTARD), true));
+        WISP_CUSTARD = registerWithTab("wisp_custard", () -> new WispCustardItem(drinkItem(FoodValues.WISP_CUSTARD)));
 
         BANSHEE_POWDER_ICE_CREAM = registerWithTab("banshee_powder_ice_cream", () -> new BansheePowderIceCreamItem(stickItem(FoodValues.BANSHEE_POWDER_ICE_CREAM)));
         LIGHTSPORES_POPSICLE = registerWithTab("lightspores_popsicle", () -> new LightsporesPopsicleItem(stickItem(FoodValues.LIGHTSPORES_POPSICLE)));
@@ -110,11 +110,11 @@ public class ModItems {
 
         BANSHEE_COOKIE = registerWithTab("banshee_cookie", () -> new Item(foodItem(FoodValues.BANSHEE_COOKIE)));
         BLUE_SCALE_FUNGUS_ROLL = registerWithTab("blue_scale_fungus_roll", () -> new BlueScaleFungusRollItem(foodItem(FoodValues.BLUE_SCALE_FUNGUS_ROLL)));
-        CEREBRAGE_ROLLS = registerWithTab("cerebrage_rolls", () -> new Item(foodItem(FoodValues.CEREBRAGE_ROLLS)));
+        CEREBRAGE_ROLLS = registerWithTab("cerebrage_rolls", () -> new CerebrageRollsItem(foodItem(FoodValues.CEREBRAGE_ROLLS)));
         COOKED_HOGHAM_SLICE = registerWithTab("cooked_hogham_slice", () -> new Item(foodItem(FoodValues.COOKED_HOGHAM_SLICE)));
         GLOWCHEESE_ROLL = registerWithTab("glowcheese_roll", () -> new Item(foodItem(FoodValues.GLOWCHEESE_ROLL)));
         GLOWCHEESE_SANDWICH = registerWithTab("glowcheese_sandwich", () -> new Item(foodItem(FoodValues.GLOWCHEESE_SANDWICH)));
-        GLOWCHEESE_SLICE = registerWithTab("glowcheese_slice", () -> new Item(foodItem(FoodValues.GLOWCHEESE_SLICE)));
+        GLOWCHEESE_SLICE = registerWithTab("glowcheese_slice", () -> new GlowcheeseSliceItem(foodItem(FoodValues.GLOWCHEESE_SLICE)));
         HOGHAM_SLICE = registerWithTab("hogham_slice", () -> new Item(foodItem(FoodValues.HOGHAM_SLICE)));
         NETHER_HAMBURGER = registerWithTab("nether_hamburger", () -> new NetherHamburgerItem(foodItem(FoodValues.NETHER_HAMBURGER)));
         OCHRE_COOKIE = registerWithTab("ochre_cookie", () -> new Item(foodItem(FoodValues.OCHRE_COOKIE)));
@@ -137,7 +137,7 @@ public class ModItems {
         HONEY_GLAZED_HOGHAM_BLOCK = registerWithTab("honey_glazed_hogham_block", () -> new BlockItem((Block)ModBlocks.HONEY_GLAZED_HOGHAM_BLOCK.get(), basicItem().stacksTo(1)));
         HONEY_GLAZED_HOGHAM = registerWithTab("honey_glazed_hogham", () -> new ConsumableItem(bowlFoodItem(FoodValues.HONEY_GLAZED_HOGHAM_BLOCK), true));
 
-        NETHER_DOG_FOOD = registerWithTab("nether_dog_food", () -> new DogFoodItem(bowlFoodItem(FoodValues.NETHER_DOG_FOOD)));
+        NETHER_DOG_FOOD = registerWithTab("nether_dog_food", () -> new NetherDogFoodItem(bowlFoodItem(FoodValues.NETHER_DOG_FOOD)));
 
         ECTO_INGOT = registerWithTab("ecto_ingot", () -> new Item(basicItem()));
         ECTO_KNIFE = registerWithTab("ecto_knife", () -> new KnifeItem(Tiers.NETHERITE, 0.5F, -2.0F, basicItem()));

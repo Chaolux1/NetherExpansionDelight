@@ -14,7 +14,7 @@ import java.util.List;
 
 public class BlueScaleFungusRollItem extends JNEDConsumableItem {
     public BlueScaleFungusRollItem(Properties properties) {
-        super(properties);
+        super(properties, false, true);
     }
 
     @Override
