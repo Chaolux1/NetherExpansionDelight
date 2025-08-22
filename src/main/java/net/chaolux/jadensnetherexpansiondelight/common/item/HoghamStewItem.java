@@ -14,7 +14,7 @@ import java.util.List;
 
 public class HoghamStewItem extends JNEDConsumableItem {
     public HoghamStewItem(Properties properties) {
-        super(properties, false, true);
+        super(properties, true, true);
     }
 
     @Override

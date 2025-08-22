@@ -28,7 +28,7 @@ import java.util.List;
 public class NightsporesJuiceItem extends JNEDConsumableItem {
 
     public NightsporesJuiceItem(Properties properties) {
-        super(properties, false, true);
+        super(properties, true, true);
     }
 
     @Override

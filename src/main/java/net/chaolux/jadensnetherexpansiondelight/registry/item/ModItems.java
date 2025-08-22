@@ -108,7 +108,7 @@ public class ModItems {
         LIGHTSPORES_POPSICLE = registerWithTab("lightspores_popsicle", () -> new LightsporesPopsicleItem(stickItem(FoodValues.LIGHTSPORES_POPSICLE)));
         NIGHTSPORES_POPSICLE = registerWithTab("nightspores_popsicle", () -> new NightsporesPopsicleItem(stickItem(FoodValues.NIGHTSPORES_POPSICLE)));
 
-        BANSHEE_COOKIE = registerWithTab("banshee_cookie", () -> new Item(foodItem(FoodValues.BANSHEE_COOKIE)));
+        BANSHEE_COOKIE = registerWithTab("banshee_cookie", () -> new ConsumableItem(foodItem(FoodValues.BANSHEE_COOKIE),true));
         BLUE_SCALE_FUNGUS_ROLL = registerWithTab("blue_scale_fungus_roll", () -> new BlueScaleFungusRollItem(foodItem(FoodValues.BLUE_SCALE_FUNGUS_ROLL)));
         CEREBRAGE_ROLLS = registerWithTab("cerebrage_rolls", () -> new CerebrageRollsItem(foodItem(FoodValues.CEREBRAGE_ROLLS)));
         COOKED_HOGHAM_SLICE = registerWithTab("cooked_hogham_slice", () -> new Item(foodItem(FoodValues.COOKED_HOGHAM_SLICE)));
@@ -123,16 +123,16 @@ public class ModItems {
         VERDANT_COOKIE = registerWithTab("verdant_cookie", () -> new Item(foodItem(FoodValues.VERDANT_COOKIE)));
         WISP_DUMPLINGS = registerWithTab("wisp_dumplings", () -> new Item(foodItem(FoodValues.WISP_DUMPLINGS)));
         WRAITHING_FLESH_SLICE = registerWithTab("wraithing_flesh_slice", () -> new Item(foodItem(FoodValues.WRAITHING_FLESH_SLICE)));
-        COOKED_WRAITHING_FLESH = registerWithTab("cooked_wraithing_flesh", () -> new Item(foodItem(FoodValues.COOKED_WRAITHING_FLESH)));
-        COOKED_WRAITHING_FLESH_SLICE = registerWithTab("cooked_wraithing_flesh_slice", () -> new Item(foodItem(FoodValues.COOKED_WRAITHING_FLESH_SLICE)));
-        WRAPPED_WITHER_ROSE = registerWithTab("wrapped_wither_rose", () -> new Item(foodItem(FoodValues.WRAPPED_WITHER_ROSE)));
+        COOKED_WRAITHING_FLESH = registerWithTab("cooked_wraithing_flesh", () -> new ConsumableItem(foodItem(FoodValues.COOKED_WRAITHING_FLESH),true));
+        COOKED_WRAITHING_FLESH_SLICE = registerWithTab("cooked_wraithing_flesh_slice", () -> new ConsumableItem(foodItem(FoodValues.COOKED_WRAITHING_FLESH_SLICE),true));
+        WRAPPED_WITHER_ROSE = registerWithTab("wrapped_wither_rose", () -> new ConsumableItem(foodItem(FoodValues.WRAPPED_WITHER_ROSE),true));
 
         LIGHTSPORES_CHEESECAKE = registerWithTab("lightspores_cheesecake", () -> new BlockItem((Block) ModBlocks.LIGHTSPORES_CHEESECAKE.get(), basicItem()));
-        LIGHTSPORES_CHEESECAKE_SLICE = registerWithTab("lightspores_cheesecake_slice", () -> new Item(foodItem(FoodValues.LIGHTSPORES_CHEESECAKE_SLICE)));
+        LIGHTSPORES_CHEESECAKE_SLICE = registerWithTab("lightspores_cheesecake_slice", () -> new ConsumableItem(foodItem(FoodValues.LIGHTSPORES_CHEESECAKE_SLICE),true));
         NIGHTSPORES_CHEESECAKE = registerWithTab("nightspores_cheesecake", () -> new BlockItem((Block)ModBlocks.NIGHTSPORES_CHEESECAKE.get(), basicItem()));
-        NIGHTSPORES_CHEESECAKE_SLICE = registerWithTab("nightspores_cheesecake_slice", () -> new Item(foodItem(FoodValues.NIGHTSPORES_CHEESECAKE_SLICE)));
+        NIGHTSPORES_CHEESECAKE_SLICE = registerWithTab("nightspores_cheesecake_slice", () -> new ConsumableItem(foodItem(FoodValues.NIGHTSPORES_CHEESECAKE_SLICE),true));
         WISP_PIE = registerWithTab("wisp_pie", () -> new BlockItem((Block)ModBlocks.WISP_PIE.get(), basicItem()));
-        WISP_PIE_SLICE = registerWithTab("wisp_pie_slice", () -> new Item(foodItem(FoodValues.WISP_PIE_SLICE)));
+        WISP_PIE_SLICE = registerWithTab("wisp_pie_slice", () -> new ConsumableItem(foodItem(FoodValues.WISP_PIE_SLICE),true));
 
         HONEY_GLAZED_HOGHAM_BLOCK = registerWithTab("honey_glazed_hogham_block", () -> new BlockItem((Block)ModBlocks.HONEY_GLAZED_HOGHAM_BLOCK.get(), basicItem().stacksTo(1)));
         HONEY_GLAZED_HOGHAM = registerWithTab("honey_glazed_hogham", () -> new ConsumableItem(bowlFoodItem(FoodValues.HONEY_GLAZED_HOGHAM_BLOCK), true));
@@ -140,7 +140,7 @@ public class ModItems {
         NETHER_DOG_FOOD = registerWithTab("nether_dog_food", () -> new NetherDogFoodItem(bowlFoodItem(FoodValues.NETHER_DOG_FOOD)));
 
         ECTO_INGOT = registerWithTab("ecto_ingot", () -> new Item(basicItem()));
-        ECTO_KNIFE = registerWithTab("ecto_knife", () -> new KnifeItem(Tiers.NETHERITE, 0.5F, -2.0F, basicItem()));
+        ECTO_KNIFE = registerWithTab("ecto_knife", () -> new EctoKnifeItem(Tiers.NETHERITE, 0.5F, -2.0F, basicItem()));
 
     }
 }

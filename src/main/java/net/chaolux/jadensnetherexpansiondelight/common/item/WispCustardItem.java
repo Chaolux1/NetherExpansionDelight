@@ -16,7 +16,7 @@ import java.util.List;
 public class WispCustardItem extends JNEDConsumableItem {
 
     public WispCustardItem(Properties properties) {
-        super(properties, false, true);
+        super(properties, true, true);
     }
 
     @Override

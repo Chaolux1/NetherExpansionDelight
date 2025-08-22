@@ -22,7 +22,7 @@ import java.util.List;
 public class LightsporesPopsicleItem extends JNEDConsumableItem {
 
     public LightsporesPopsicleItem(Properties properties) {
-        super(properties, false, true);
+        super(properties, true, true);
     }
 
     @Override
