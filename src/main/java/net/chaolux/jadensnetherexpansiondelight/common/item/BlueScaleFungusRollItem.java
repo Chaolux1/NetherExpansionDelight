@@ -1,5 +1,7 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
@@ -33,6 +35,9 @@ public class BlueScaleFungusRollItem extends JNEDConsumableItem {
             }
             entity.setDeltaMovement(entity.getDeltaMovement().add(push));
             entity.hurtMarked=true;
+            if(level instanceof ServerLevel serverLevel) {
+                serverLevel.sendParticles(ParticleTypes.CLOUD,entity.getX(),entity.getY() + entity.getBbHeight() * 0.5,entity.getZ(),4,0.1,0.1,0.1,0.02);
+            }
         }
         if(consumer instanceof Player players) {
             level.playSound(null, players.blockPosition(), SoundEvents.ANVIL_BREAK, SoundSource.PLAYERS,0.5f,0.5f);

@@ -1,5 +1,7 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
@@ -31,6 +33,9 @@ public class NetherHamburgerItem extends JNEDConsumableItem {
             Vec3 directory=entity.position().subtract(player).normalize().scale(0.4);
             entity.setDeltaMovement(entity.getDeltaMovement().add(directory));
             entity.hurtMarked=true;
+            if(level instanceof ServerLevel serverLevel) {
+                serverLevel.sendParticles(ParticleTypes.CRIT,entity.getX(),entity.getY() + entity.getBbHeight() * 0.5,entity.getZ(),6,0.15,0.15,0.15,0.01);
+            }
         }
         if(consumer instanceof Player players) {
             level.playSound(null, players.blockPosition(), SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS,0.4f,0.5f);

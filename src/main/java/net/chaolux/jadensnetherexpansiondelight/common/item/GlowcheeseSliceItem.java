@@ -1,6 +1,7 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -32,7 +33,7 @@ public class GlowcheeseSliceItem extends JNEDConsumableItem {
             if(block instanceof RedstoneLampBlock && blockState.hasProperty(RedstoneLampBlock.LIT)) {
                 boolean lit=blockState.getValue(RedstoneLampBlock.LIT);
                 serverLevel.setBlock(pos,blockState.setValue(RedstoneLampBlock.LIT,!lit),3);
-
+                serverLevel.sendParticles(ParticleTypes.ELECTRIC_SPARK,pos.getX() + 0.5,pos.getY() + 0.9,pos.getZ() + 0.5,10,0.15,0.15,0.15,0.02);
             }
         });
         if(consumer instanceof Player players) {

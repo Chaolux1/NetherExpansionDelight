@@ -34,6 +34,9 @@ public class PastaWithCookedHoghamItem extends JNEDConsumableItem {
                 navigation.moveTo(player,1.25);
             }
             pig.getLookControl().setLookAt(player,30.0f,30.0f);
+            if(level instanceof ServerLevel serverLevel) {
+                serverLevel.sendParticles(ParticleTypes.HEART,pig.getX(),pig.getY() + 0.7,pig.getZ(),1,0.05,0.05,0.05,0.0);
+            }
         }
             level.playSound(null, player.blockPosition(), SoundEvents.PIG_SADDLE, SoundSource.PLAYERS,1.0f,1.0f);
     }

@@ -1,5 +1,7 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -37,6 +39,9 @@ public class SporesSaladItem extends JNEDConsumableItem {
         List<LivingEntity> team=level.getEntitiesOfClass(LivingEntity.class,consumer.getBoundingBox().inflate(radius), entity -> isTamable(consumer, entity));
         for(LivingEntity entity : team) {
             entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,400,0,false,true));
+            if(level instanceof ServerLevel serverLevel) {
+                serverLevel.sendParticles(ParticleTypes.HEART,entity.getX(),entity.getY() + entity.getBbHeight() + 0.2,entity.getZ(),2,0.05,0.05,0.05,0.0);
+            }
         }
         if(consumer instanceof Player player) {
             level.playSound(null, player.blockPosition(), SoundEvents.BONE_BLOCK_STEP, SoundSource.PLAYERS,1.0f,1.0f);

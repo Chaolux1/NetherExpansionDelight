@@ -1,5 +1,7 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
@@ -24,6 +26,9 @@ public class HoghamStewItem extends JNEDConsumableItem {
         List<Animal> animals = level.getEntitiesOfClass(Animal.class, consumer.getBoundingBox().inflate(radius), animal -> animal.isAlive());
         for(Animal animal : animals) {
             animal.setLastHurtByMob(player);
+            if(level instanceof ServerLevel serverLevel) {
+                serverLevel.sendParticles(ParticleTypes.ANGRY_VILLAGER,animal.getX(),animal.getY() + animal.getBbHeight() + 0.1,animal.getZ(),2,0.05,0.05,0.05,0.0);
+            }
         }
         if(consumer instanceof Player players) {
             level.playSound(null, players.blockPosition(), SoundEvents.PIG_AMBIENT, SoundSource.PLAYERS,1.6f,0.8f);

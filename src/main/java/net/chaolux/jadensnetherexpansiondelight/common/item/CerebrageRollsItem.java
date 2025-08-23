@@ -1,5 +1,7 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
@@ -30,6 +32,9 @@ public class CerebrageRollsItem extends JNEDConsumableItem {
             LivingEntity goal=entities.get(consumer.getRandom().nextInt(entities.size()));
             if(goal !=mob) {
                 mob.setTarget(goal);
+                if(level instanceof ServerLevel serverLevel) {
+                    serverLevel.sendParticles(ParticleTypes.ANGRY_VILLAGER,mob.getX(),mob.getY() + mob.getBbHeight() * 0.2,mob.getZ(),3,0.05,0.05,0.05,0.0);
+                }
             }
         }
         if(consumer instanceof Player player) {

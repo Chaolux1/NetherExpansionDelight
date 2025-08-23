@@ -34,6 +34,8 @@ public class LightsporesPopsicleItem extends JNEDConsumableItem {
         LivingEntity another=mobs.get(consumer.getRandom().nextInt(mobs.size()));
         double player_x=consumer.getX(),player_y=consumer.getY(),player_z=consumer.getZ();
         double mobs_x=another.getX(),mobs_y=another.getY(),mobs_z=another.getZ();
+        serverLevel.sendParticles(ParticleTypes.PORTAL,player_x,player_y + 1.0,player_z,20,0.4,0.6,0.4,0.2);
+        serverLevel.sendParticles(ParticleTypes.PORTAL,mobs_x,mobs_y + 1.0,mobs_z,20,0.4,0.6,0.4,0.2);
         consumer.teleportTo(serverLevel,mobs_x,mobs_y,mobs_z, EnumSet.noneOf(RelativeMovement.class),consumer.getYRot(),consumer.getXRot());
         another.teleportTo(serverLevel,player_x,player_y,player_z, EnumSet.noneOf(RelativeMovement.class),another.getYRot(),another.getXRot());
         if(consumer instanceof Player player) {

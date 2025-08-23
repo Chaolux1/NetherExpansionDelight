@@ -1,5 +1,6 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -40,6 +41,9 @@ public class BansheePowderIceCreamItem extends JNEDConsumableItem {
                 neutralMob.stopBeingAngry();
             }
             mob.setAggressive(false);
+            if(level instanceof ServerLevel serverLevel) {
+                serverLevel.sendParticles(ParticleTypes.POOF,mob.getX(),mob.getY() + mob.getBbHeight() * 0.5,mob.getZ(),6,0.15,0.15,0.15,0.01);
+            }
         }
         if(consumer instanceof Player player) {
             level.playSound(null, player.blockPosition(), SoundEvents.GOAT_SCREAMING_HURT, SoundSource.PLAYERS,1.0f,1.0f);

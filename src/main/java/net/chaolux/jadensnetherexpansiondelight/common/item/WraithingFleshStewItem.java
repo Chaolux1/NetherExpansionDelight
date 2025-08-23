@@ -1,5 +1,7 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
@@ -30,5 +32,8 @@ public class WraithingFleshStewItem extends JNEDConsumableItem {
         double current=Math.max(2.0,player.getAttribute(Attributes.MAX_HEALTH).getBaseValue() - 0.0);
         if(player.getHealth() > (float) current) player.setHealth((float) current);
             level.playSound(null, player.blockPosition(), SoundEvents.SOUL_ESCAPE, SoundSource.PLAYERS,1.5f,0.9f);
+        if(level instanceof ServerLevel serverLevel) {
+            serverLevel.sendParticles(ParticleTypes.SOUL,player.getX(),player.getY() + 0.8,player.getZ(),12,0.25,0.35,0.35,0.02);
+        }
     }
 }

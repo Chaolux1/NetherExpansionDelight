@@ -1,5 +1,7 @@
 package net.chaolux.jadensnetherexpansiondelight.common.item;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -29,6 +31,10 @@ public class WispCustardItem extends JNEDConsumableItem {
         consumer.setDeltaMovement(consumer.getDeltaMovement().add(vx,2.25,vz));
         consumer.hurtMarked=true;
         consumer.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,200,0,false,false));
+        if(level instanceof ServerLevel serverLevel) {
+            serverLevel.sendParticles(ParticleTypes.CLOUD,consumer.getX(),consumer.getY() + 0.1,consumer.getZ(),10,0.25,0.1,0.25,0.02);
+            serverLevel.sendParticles(ParticleTypes.END_ROD,consumer.getX(),consumer.getY() + 1.0,consumer.getZ(),8,0.2,0.3,0.2,0.01);
+        }
         if(consumer instanceof Player player) {
             level.playSound(null, player.blockPosition(), SoundEvents.AXOLOTL_SWIM, SoundSource.PLAYERS,0.9f,0.8f);
         }
