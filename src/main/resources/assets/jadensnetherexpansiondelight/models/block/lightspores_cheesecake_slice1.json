@@ -1,5 +1,5 @@
 {
-  "parent": "farmersdelight:block/pie_slice1",
+  "parent": "farmersdelight:block/template_pie_slice1",
   "textures": {
     "particle": "jadensnetherexpansiondelight:block/lightspores_cheesecake_top",
     "bottom": "farmersdelight:block/pie_bottom",
