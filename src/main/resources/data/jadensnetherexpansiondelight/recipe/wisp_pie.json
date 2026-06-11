@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "farmersdelight:pie_crust"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:wisp_bottle"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "jadensnetherexpansiondelight:wisp_pie"
+  }
+}

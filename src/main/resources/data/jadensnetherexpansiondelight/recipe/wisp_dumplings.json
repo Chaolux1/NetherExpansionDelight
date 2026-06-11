@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:paper"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:wisp_bottle"
+    },
+    {
+      "item": "netherexp:wisp_bottle"
+    },
+    {
+      "item": "farmersdelight:wheat_dough"
+    },
+    {
+      "item": "netherexp:cerebrage"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "jadensnetherexpansiondelight:wisp_dumplings"
+  }
+}

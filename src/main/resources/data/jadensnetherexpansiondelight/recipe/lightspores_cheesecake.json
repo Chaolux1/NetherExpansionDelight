@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "farmersdelight:pie_crust"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:lightspores"
+    },
+    {
+      "tag": "c:drinks/milk"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "jadensnetherexpansiondelight:lightspores_cheesecake"
+  }
+}

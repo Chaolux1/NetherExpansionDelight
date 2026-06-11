@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:stick"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "netherexp:banshee_powder"
+    },
+    {
+      "item": "netherexp:banshee_powder"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:ice"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "jadensnetherexpansiondelight:banshee_powder_ice_cream"
+  }
+}

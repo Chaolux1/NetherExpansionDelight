@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "netherexp:ectoplasm_bucket"
+    },
+    {
+      "item": "netherexp:netherite_plating"
+    },
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "netherexp:wisp_bottle"
+    }
+  ],
+  "result": {
+    "id": "jadensnetherexpansiondelight:ecto_ingot"
+  }
+}

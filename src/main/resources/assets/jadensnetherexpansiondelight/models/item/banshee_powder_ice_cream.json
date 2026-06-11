@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jadensnetherexpansiondelight:item/banshee_powder_ice_cream"
+  }
+}

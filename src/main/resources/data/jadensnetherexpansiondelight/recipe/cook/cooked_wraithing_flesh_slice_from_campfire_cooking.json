@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "jadensnetherexpansiondelight:wraithing_flesh_slice"
+  },
+  "result": {
+    "count": 1,
+    "id": "jadensnetherexpansiondelight:cooked_wraithing_flesh_slice"
+  }
+}

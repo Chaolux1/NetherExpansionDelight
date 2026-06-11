@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "tag": "netherexp:cooked_hogham"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 3,
+        "id": "jadensnetherexpansiondelight:cooked_hogham_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}
